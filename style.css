@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* presets */
+
+body{
+    font-family: 'Roboto';
+}
+
+:root{
+    --color-accent: rgb(243, 10, 10);
+    --color-primary-text: white;
+    --color-secondary-text: gray;
+    --inline-margin: 20px;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/* utilities */
+
+.container{
+    width: 80vw;
+    margin-inline: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.primary-button{
+    border-radius: 5px;
+    color: var(--color-primary-text);
+    background-color: var(--color-accent);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+
+}
+
+.secondary-button{
+    display: flex;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    border-color: var(--color-primary-text);
+    color: var(--color-primary-text);
+    border: 1px solid;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.small-bold-text{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.bgContainer{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/e89c9679-2f5f-491d-924c-c58924a8ee4b/8ec27a1d-02ce-4489-b320-a95106906f5d/IN-en-20221121-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    width: 100vw;
+}
+
+.divider{
+    border: 3px gray solid;
+}
+
+/* inputbox */
+
+.start-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.text-box{
+    flex-basis: 70%;
+    height: 50px;
+}
+
+.text-box input{
+    width: 100%;
+    height: 100%;
+    padding-inline: 10px;
+    /* border-radius: 5px; */
+}
+
+.button{
+    background-color: var(--color-accent);
+    height: 50px;
+    width: 30%;
+    padding: 1rem;
+    /* border-radius: 5px; */
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    color: var(--color-primary-text);
+}
+
+/* inputbox */
+
+
+
+
+/* navigation*/
+
+nav{
+    background: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0));
+}
+
+.logoImage{
+    width: 150px;
+}
+
+.navContainer{
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.navButtonContainer{
+    gap: 20px;
+}
+
+/* header-section */
+
+header{
+    background: linear-gradient(rgb(0,0,0,0),rgb(0,0,0,0.8));
+}
+
+.headerContainer{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 6rem;
+}
+
+.header-section{
+    width: 50%;
+    color: var(--color-primary-text);
+    text-align: center;
+}
+
+.header-section p{
+    margin-top: 20px;
+}
+
+/* feature-section */
+
+.feature-section{
+    background-color: black;
+    width: 100vw;
+}
+
+.feature-container{
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-box-1{
+    flex-basis: 50%;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-primary-text);
+    align-items: flex-start;
+}
+
+.feature-box-2{
+    flex-basis: 50%;
+}
+
+.feature-box-2 img{
+    width: 100%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+/* question-section */
+
+.question-section{
+    background-color: black;
+    width: 100vw;
+}
+
+.question-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.question-header{
+    color: var(--color-primary-text);
+    margin-top: 50px;
+}
+
+.question-list{
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.question{
+    padding: 1rem;
+    background-color: rgb(61, 60, 60);
+    color: var(--color-primary-text);
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.quesion-input{
+    margin-top: 50px;
+    width: 70%;
+    margin-inline: auto;
+    color: var(--color-primary-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer-section */
+
+footer{
+    background-color: black;
+    padding-block: 50px;
+    width: 100vw;
+}
+
+.footer-container{
+    color: var(--color-secondary-text);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links{
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-links a{
+    height: 20%;
+    color: var(--color-secondary-text);
+    text-decoration: none;
+
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.gray{
+    color: var(--color-secondary-text);
+}
+
+.footer-text{
+    color: var(--color-secondary-text);
+    font-size: 0.8rem;
+    padding-block: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    p{
+        font-family: 'Ubuntu';
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+
+    .container{
+        width: 100vw;
+        padding: 1rem;
+    }
+
+    .feature-container{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .start-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .text-box{
+        width: 100%;
+        
+    }
+    .text-box input{
+        width: 100%;
+        height: 50px;
+    }
+    
+    
+    .button{
+        width: 60%;
+    }
+
+    .header-section{
+        width: 100%;
+    }
+    .footer-links{
+        gap: 5px;
+    }
+    .footer-links a{
+        height: 10%;
+    }
+    .reverse{
+        flex-direction: column;
+    }
+
+    .question-list{
+        width: 100%;
+    }
+    
+    .question{
+        width: 100%;
+    }
+    
+    .quesion-input{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
